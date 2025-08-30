@@ -11,6 +11,13 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -82,25 +89,30 @@
         class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8"
       >
         <section id="product-box" class="bg-green-100 col-span-9">
-          <div class="card bg-base-100 w-96 shadow-sm">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Card Title</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
-              <div class="card-actions justify-end">
+          <div class="product-card grid grid-cols-3 gap-5">
+            <div class="card bg-base-100 shadow-sm">
+              <div class="flex justify-between items-center p-5">
+                <div>
+                  <img
+                    class="bg-red-200 rounded-[10px] w-10 p-2"
+                    src="./images/emergency.png"
+                    alt=""
+                  />
+                </div>
+                <div><i class="fa-regular fa-heart"></i></div>
+              </div>
+              <div class="card-body">
+                <h1 class="font-bold">National Emergency Number</h1>
+                <p class="text-[#5C5C5C]">National Emergency</p>
+              </div>
+              <div class="flex justify-between p-5">
+                <button class="btn btn-primary">Buy Now</button>
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
           </div>
         </section>
+
         <aside id="card-box" class="bg-red-100 col-span-3">
           <h1>card</h1>
         </aside>
