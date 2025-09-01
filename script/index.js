@@ -49,6 +49,13 @@ function callService(serviceName, serviceNumber) {
   <div>${currentTime}</div>
 </div>`;
 
+  div.style.boxShadow =
+    "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1)";
+  div.style.borderRadius = "10px";
+  div.style.padding = "0.75rem";
+
+  div.style.height = "80px";
+
   // Append to container
   document.getElementById("callHistory").appendChild(div);
 }
