@@ -38,9 +38,19 @@ function callService(serviceName, serviceNumber) {
   document.getElementById("coinCount").textContent = coins;
 
   // Add to call history
-  const li = document.createElement("li");
-  li.textContent = `${serviceName} - ${serviceNumber}`;
-  document.getElementById("callHistory").appendChild(li);
+  const div = document.createElement("div");
+  const now = new Date();
+  const currentTime = `${now.toLocaleTimeString()}`;
+  div.innerHTML = `<div class="flex justify-between items-center">
+  <div>
+    <div class="font-bold ">${serviceName}</div>
+    <div>${serviceNumber}</div>
+  </div>
+  <div>${currentTime}</div>
+</div>`;
+
+  // Append to container
+  document.getElementById("callHistory").appendChild(div);
 }
 
 function clearHistory() {
